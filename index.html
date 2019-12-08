@@ -10,7 +10,58 @@
  <body>
      </body>
  <body>
-   
+   <style >
+* {
+    box-sizing: content-box;
+}
+
+body {
+    font-family: Tempus Sans ITC;
+}
+
+/* Style the header */
+header {
+    background-color: white;
+    padding: 35px;
+    text-align: left;
+    font-size: 20px;
+    color: #2d3c49;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 30%;
+    height: 1100px; /* only for demonstration, should be removed */
+    background: #2d3c49;
+    padding: 20px;
+    color: aquamarine;
+}
+
+    /* Style the list inside the menu */
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+/* Style the footer */
+footer {
+    background-color: #2d3c49;
+    text-align: center;
+    color: white;
+    height: 1120px;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+
+</style >
+
      <header>
          <table style="width:100%">
              <tr>
